@@ -1,0 +1,10 @@
+<div>
+  Carre VIP
+  <router-outlet name="vipTarget"></router-outlet>
+</div>
+
+<app-component1></app-component1>
+<router-outlet></router-outlet>
+
+<a [routerLink]="['toComp2']">Composant2 standard</a>
+<a [routerLink]="[{'outlets':{'vipTarget':['toVipComp2']}}]">Composant2 VIP</a>

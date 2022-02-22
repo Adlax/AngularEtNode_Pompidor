@@ -1,0 +1,6 @@
+[
+  {"type": "phone", "brand": "Peach", "name": "topPhone"},
+  {"type": "phone", "brand": "Threestars", "name": "bigPhone"},
+  {"type": "tablet", "brand": "Threestars", "name": "bigTablet"},
+  {"type": "phone", "brand": "Konia", "name": "4000"},
+]

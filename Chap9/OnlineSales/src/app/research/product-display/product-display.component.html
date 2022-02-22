@@ -1,0 +1,25 @@
+<p>products on sale :</p>
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li *ngFor="let product of (products | evenOdd: 'even')">
+          <label *ngIf="product.stock>0" class="available">{{product.name}},</label>
+          <label *ngIf="product.stock===0">{{product.name}} (not available),</label>
+          Brand : {{product.brand}},
+          Price : {{product.price}}
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let product of (products | evenOdd: 'odd')">
+          <label *ngIf="product.stock>0" class="available">{{product.name}},</label>
+          <label *ngIf="product.stock===0">{{product.name}} (not available),</label>
+          Brand : {{product.brand}},
+          Price : {{product.price}}
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
